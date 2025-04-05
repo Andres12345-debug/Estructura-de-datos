@@ -33,3 +33,12 @@ coordenadas.unshift(17.27) //agregamos los valores 17 y 27 al inicio del array
 console.log(coordenadas) //imprime el array completo con los valores 17 y 27 al inicio
 
 //Join
+let bienvenida = ["Hola", "Gente", "Como", "Estan"]
+let mensajes = bienvenida.join(' '); //unimos los elementos del array en un solo string con un espacio entre cada elemento
+console.log(mensajes) //imprime el array completo con los valores unidos en un solo string
+
+//splice
+let cuenta = '3326-4412-2211-1111'
+const cuentaArray = cuenta.split('-') //separamos los elementos del string en un array
+console.log(cuentaArray) //imprime el array completo con los valores separados
+
