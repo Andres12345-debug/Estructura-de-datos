@@ -30,7 +30,7 @@ console.log(respuestaMap, calificaciones); //imprime el nuevo array con los valo
 const respuestMapMensajes = mensajes.map(valor => valor + '**'); //agrega el valor ** a cada elemento del array 
 console.log(respuestMapMensajes); //imprime el nuevo array con los valores modificados
 
-//Meoto reduce
+//////////Meoto reduce////////////////
 //Recorre el array y devuelve un nuevo valor acumulado
 const suma = calificaciones.reduce( (acumulador, valor, indice) =>{
    return acumulador + valor;
@@ -42,3 +42,37 @@ console.log(mensajeFinal); //imprime el nuevo string con los valores concatenado
 
 //Filtrar y encontrar elementos en un array
 //Recorre el array y devuelve un nuevo array con los valores que cumplan con la condicion
+const resFilterCalificaciones = calificaciones.filter((valor, indice) => {
+      return valor >= 30; //devuelve un nuevo array con los valores que cumplan con la condicion   
+})
+console.log('filter', resFilterCalificaciones); //imprime el nuevo array con los valores que cumplan con la condicion
+
+//Find 
+const arregloFindCalificaciones = calificaciones.find((valor, indice) => {
+return valor >= 30; //devuelve el primer valor que cumpla con la condicion
+})
+console.log('find', arregloFindCalificaciones); //imprime el primer valor que cumpla con la condicion
+
+
+//Some
+const resFilterMensajes = mensajes.some(mensajes => {
+   return mensaje = 'Hola'; //devuelve true si al menos un elemento cumple con la condicion
+})
+console.log(resFilterCalificaciones); //imprime true si al menos un elemento cumple con la condicion
+
+//////////Flat///////////
+const parciales = [[10, 8,], [7,5]]; //Array de parciales bidimensional
+const ouput = parciales.flat();
+console.log('flat', ouput); //imprime el nuevo array con los valores aplanados
+
+/////Sort/////////
+const arregloSort = calificaciones.sort();
+console.log('sort',arregloSort); //imprime el nuevo array con los valores ordenados de menor a mayor
+
+//Comparar
+const arregloSotComparar = calificaciones.sort((a, b) => {
+if(a > b) return 1; //si a es mayor que b devuelve 1
+if(a < b) return -1; //si a es menor que b devuelve -1
+ return 0; //si a es igual a b devuelve 0
+})
+console.log('sort comparar', arregloSotComparar); //imprime el nuevo array con los valores ordenados de menor a mayor
