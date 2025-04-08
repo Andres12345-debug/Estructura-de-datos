@@ -6,8 +6,8 @@ Dado un array de frutas, imprime cada una con su posición (empezando desde 1):
         // 1. Manzana
         // 2. Banano
         // 3. Mango
-Problema 2: Contar cuántos elementos hay en total
 
+Problema 2: Contar cuántos elementos hay en total
         Dado un array de objetos con una propiedad cantidad, calcula el total general:
         const carrito = [
         { producto: "Pan", cantidad: 2 },

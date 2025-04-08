@@ -35,7 +35,7 @@ console.log(respuestMapMensajes); //imprime el nuevo array con los valores modif
 const suma = calificaciones.reduce( (acumulador, valor, indice) =>{
    return acumulador + valor;
 }, 0);
-console.log(suma); //imprime el nuevo valor acumulado
+console.log('SUMA',suma); //imprime el nuevo valor acumulado
 
 const mensajeFinal = mensajes.reduce((acumulador, valor) => acumulador += valor + ' ', ' '); //agrega el valor de cada elemento del array al acumulador y devuelve un nuevo string con los valores concatenados
 console.log(mensajeFinal); //imprime el nuevo string con los valores concatenados
