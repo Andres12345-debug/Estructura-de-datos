@@ -1,0 +1,84 @@
+Problema 1: Mostrar una lista con índice
+
+Dado un array de frutas, imprime cada una con su posición (empezando desde 1):
+        const frutas = ["Manzana", "Banano", "Mango"];
+        // Resultado esperado:
+        // 1. Manzana
+        // 2. Banano
+        // 3. Mango
+Problema 2: Contar cuántos elementos hay en total
+
+        Dado un array de objetos con una propiedad cantidad, calcula el total general:
+        const carrito = [
+        { producto: "Pan", cantidad: 2 },
+        { producto: "Leche", cantidad: 3 },
+        { producto: "Huevos", cantidad: 1 }
+        ];
+        // Resultado esperado: 6
+ map
+
+Problema 1: Convertir temperaturas
+
+        Dado un array de temperaturas en Celsius, conviértelas a Fahrenheit.
+        Fórmula: F = C * 1.8 + 32
+
+        Problema 2: Formatear correos
+
+        Dado un array de nombres de usuario, conviértelos a correos de una empresa:
+
+        const usuarios = ["juan", "ana", "carlos"];
+        // Resultado esperado:
+        // ["juan@empresa.com", "ana@empresa.com", "carlos@empresa.com"]
+
+reduce
+Problema 1: Calcular total de ventas
+
+        Dado un array de ventas con precios, obtén el total:
+
+        js
+        Copiar
+        Editar
+        const ventas = [
+        { producto: "Zapatos", precio: 120 },
+        { producto: "Camisa", precio: 60 }
+        ];
+        // Resultado esperado: 180
+Problema 2: Combinar strings
+
+Dado un array de palabras, únelas en una sola frase separada por espacios.
+
+ filter
+Problema 1: Filtrar usuarios por edad
+
+        Dado un array de usuarios, filtra los que son mayores de edad (18 años o más).
+
+        Problema 2: Obtener productos con stock
+
+        Dado un array de productos con campo stock, retorna solo los disponibles (stock > 0).
+find
+
+Problema 1: Buscar libro por título
+        Dado un array de libros con título y autor, encuentra el libro con título "El principito".
+ Problema 2: Buscar primer número negativo
+        Dado un array de enteros, encuentra el primer número menor que cero.
+
+some
+Problema 1: Verificar si alguien tiene contraseña débil
+    Dado un array de usuarios con campo password, verifica si alguno tiene una contraseña de menos de 6 caracteres.
+   
+    Problema 2: Verificar si hay descuentos activos
+    Dado un array de productos, determina si al menos uno tiene descuento activo (descuento: true).
+ flat
+
+Problema 1: Aplanar listas anidadas
+
+    Tienes un array como [1, [2, 3], [4, 5]], conviértelo a [1, 2, 3, 4, 5].
+    Problema 2: Eliminar niveles profundos de un array
+    Dado un array profundo como [1, [2, [3, [4]]]], aplánalo completamente en una sola línea.
+
+sort
+    Problema 1: Ordenar por precio
+    Dado un array de productos con campo precio, ordénalos de menor a mayor.
+
+    Problema 2: Ordenar nombres alfabéticamente descendente
+    Dado un array de nombres, ordénalos de Z a A.

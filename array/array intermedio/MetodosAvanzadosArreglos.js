@@ -1,5 +1,5 @@
 const calificaciones = [20, 30, 40, 50] //Array de calificaciones numeros
-const mensajes = ["Hola", "Gente", "Como", "Estan"]    //Array de mensajes string
+const mensajes = ["Holas", "Gentesa", "Zom", "Est"]    //Array de mensajes string
 
 
 /////////Metodo Foreach//////////
@@ -69,10 +69,27 @@ console.log('flat', ouput); //imprime el nuevo array con los valores aplanados
 const arregloSort = calificaciones.sort();
 console.log('sort',arregloSort); //imprime el nuevo array con los valores ordenados de menor a mayor
 
-//Comparar
+//Comparar ordenar valores numericos
 const arregloSotComparar = calificaciones.sort((a, b) => {
 if(a > b) return 1; //si a es mayor que b devuelve 1
 if(a < b) return -1; //si a es menor que b devuelve -1
  return 0; //si a es igual a b devuelve 0
 })
 console.log('sort comparar', arregloSotComparar); //imprime el nuevo array con los valores ordenados de menor a mayor
+
+//ordenar los textos
+const arreglarSortTextos = mensajes.sort((a, b) => {
+
+   if(a > b) return 1; //si a es mayor que b devuelve 1
+   if(a < b) return -1; //si a es menor que b devuelve -1
+   return 0; //si a es igual a b devuelve 0
+})
+console.log('sort textos', arreglarSortTextos); //imprime el nuevo array con los valores ordenados de menor a mayor
+
+//Mas textos
+const arregloSortTextos = mensajes.sort((a, b) => {
+if(a[1] < b[1]) return -1; //si a es mayor que b devuelve 1
+if(a[1] > b[1]) return 1; //si a es menor que b devuelve -1   
+return 0; //si a es igual a b devuelve 0
+})
+console.log('sort textos', arregloSortTextos); //imprime el nuevo array con los valores ordenados de menor a mayor
