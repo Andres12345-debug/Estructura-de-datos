@@ -91,3 +91,54 @@ console.log(resultadoBusqueda)
 const numeros = [-2,-1,1,2,3,4]
 const resultadoNumeros = numeros.find((elemento) => elemento  < 0);
 console.log(resultadoNumeros)
+
+//Problema 1: Verificar si alguien tiene contraseña débil
+const usuarios = [
+  {usuario: "Sebastian", contrasenia: "sebastang527"},
+  {usuario: "Glucerna", contrasenia: "123"},
+  {usuario: "Martin", contrasenia: "@Keillter582"},
+]
+const resultadoContrasenia = usuarios.some((elemento) => elemento.contrasenia.length < 6);
+console.log(resultadoContrasenia)
+//Problema 2: Verificar si hay descuentos activos
+const productosDrogueria = [
+  {usuario: "Acetaminofem", descuento: true},
+  {usuario: "Noxpirina", descuento: false},
+  {usuario: "Naproxeno", descuento: false},
+  ]
+  const descuentos = productosDrogueria.some((elemento) => elemento.descuento == true)
+  console.log(descuentos)
+
+// flat
+//Problema 1: Aplanar listas anidadas
+const listaNumero = [1, [2, 3, 4],5]
+console.log(listaNumero.flat());
+
+//Problema 2: Eliminar niveles profundos de un array
+const listaAplanar = [1, [2, [3, [4]]]]
+console.log(listaAplanar.flat(Infinity))
+
+//Problema 1: Ordenar por precio
+const autos = [
+  {auto: "Bmw", precio: 5000},
+  {auto: "Audi", precio: 90000},
+  {auto: "Mercedes", precio: 12000},
+  ]
+  const arregloSotComparar = autos.sort((a, b) => {
+    if (a.precio < b.precio) return -1; // cambia el orden
+    if (a.precio > b.precio) return 1; 
+    return 0;
+  });
+  console.log(arregloSotComparar)
+
+  const nombresPersonas = ["David", "Brian", "Daniel", "Alberto"]
+  const arreglarNombres = nombresPersonas.sort((a, b) => {
+
+    if(a > b) return 1; //si a es mayor que b devuelve 1
+    if(a < b) return -1; //si a es menor que b devuelve -1
+    return 0; //si a es igual a b devuelve 0
+ })
+ console.log(arreglarNombres)
+
+
+

@@ -16,4 +16,34 @@ Este proyecto utiliza **React** para construir una interfaz interactiva basada e
 ## Instalación
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tuusuario/nombre-del-repositorio.git
+   git clone https://github.com/Andres12345-debug/Estructura-de-datos.git
+
+2. Estructura del proyecto Frontend
+    /frontend
+├── /node_modules        (dependencias instaladas con npm)
+├── /public              (archivos públicos como index.html)
+├── /src                 (todo el código fuente del proyecto)
+│   ├── /components      (componentes reutilizables)
+│   │   ├── Header.js
+│   │   ├── Footer.js
+│   │   ├── Navbar.js
+│   │   └── LoadingSpinner.js
+│   ├── /pages           (páginas principales del proyecto)
+│   │   ├── Home.js
+│   │   ├── About.js
+│   │   ├── Exercises.js
+│   │   └── NotFound.js
+│   ├── /styles          (archivos CSS y de estilos)
+│   │   ├── App.css
+│   │   ├── Header.css
+│   │   └── Footer.css
+│   ├── /utils           (funciones auxiliares o utilidades)
+│   │   ├── api.js
+│   │   └── helpers.js
+│   ├── App.js           (componente principal)
+│   ├── index.js         (punto de entrada)
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+├── .gitignore           (archivos a ignorar por Git)
+├── package.json         (configuración de dependencias y scripts)
+└── README.md            (documentación del proyecto)

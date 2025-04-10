@@ -64,13 +64,14 @@ Problema 1: Verificar si alguien tiene contraseña débil
    
     Problema 2: Verificar si hay descuentos activos
     Dado un array de productos, determina si al menos uno tiene descuento activo (descuento: true).
+
+
  flat
+        Problema 1: Aplanar listas anidadas
 
-Problema 1: Aplanar listas anidadas
-
-    Tienes un array como [1, [2, 3], [4, 5]], conviértelo a [1, 2, 3, 4, 5].
-    Problema 2: Eliminar niveles profundos de un array
-    Dado un array profundo como [1, [2, [3, [4]]]], aplánalo completamente en una sola línea.
+        Tienes un array como [1, [2, 3], [4, 5]], conviértelo a [1, 2, 3, 4, 5].
+        Problema 2: Eliminar niveles profundos de un array
+        Dado un array profundo como [1, [2, [3, [4]]]], aplánalo completamente en una sola línea.
 
 sort
     Problema 1: Ordenar por precio
