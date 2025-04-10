@@ -14,3 +14,19 @@ const carrito = [
    },0)
    console.log(suma); //imprime el nuevo valor acumulado
 
+   //EJERCICIO 3 MAP Fórmula: F = C * 1.8 + 32 
+   //Este motodo sirve para hacer operaciones sin dañar el valor original
+   const temperatura = [2, 3, 4]
+   respuestaMap = temperatura.map((valor, indice) =>{
+    return valor * 1.8 + 32; 
+   })
+   console.log(respuestaMap, temperatura)
+
+   //Problema 2: Formatear correos
+   const nombres = ["Adrian", "Duglas", "Clara"]
+   respuestaCorreos = nombres.map((valor) =>{
+    return (valor + "@gmail.com")
+   })
+   console.log(respuestaCorreos)
+
+
