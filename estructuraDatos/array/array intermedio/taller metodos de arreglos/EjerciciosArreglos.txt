@@ -35,9 +35,6 @@ Problema 1: Calcular total de ventas
 
         Dado un array de ventas con precios, obtén el total:
 
-        js
-        Copiar
-        Editar
         const ventas = [
         { producto: "Zapatos", precio: 120 },
         { producto: "Camisa", precio: 60 }
@@ -59,7 +56,6 @@ find
 
 Problema 1: Buscar libro por título
         Dado un array de libros con título y autor, encuentra el libro con título "El principito".
- Problema 2: Buscar primer número negativo
         Dado un array de enteros, encuentra el primer número menor que cero.
 
 some

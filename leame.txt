@@ -1,0 +1,19 @@
+# Proyecto de Interfaz con React
+
+## Descripción
+Este proyecto utiliza **React** para construir una interfaz interactiva basada en los ejercicios previamente desarrollados. La aplicación facilita la visualización de datos y la interacción del usuario.
+
+## Estructura del Proyecto
+- **/node_modules**: Dependencias de Node.js instaladas automáticamente.
+- **/public**: Archivos estáticos y públicos como el HTML base (`index.html`).
+- **/src**: Código fuente de la aplicación React.
+  - `App.js`: Componente principal que conecta la lógica y la interfaz.
+  - `index.js`: Punto de entrada para iniciar la aplicación.
+  - `App.css`: Estilos para los componentes.
+  - `index.css`: Estilos globales.
+- **package.json**: Define las dependencias, scripts y configuración del proyecto.
+
+## Instalación
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/tuusuario/nombre-del-repositorio.git
