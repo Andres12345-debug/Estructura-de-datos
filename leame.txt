@@ -1,24 +1,43 @@
-# Proyecto de Interfaz con React
+#Proyecto de Interfaz con React
 
-## Descripción
-Este proyecto utiliza **React** para construir una interfaz interactiva basada en los ejercicios previamente desarrollados. La aplicación facilita la visualización de datos y la interacción del usuario.
+    npx create-react-app frontend
 
-## Estructura del Proyecto
-- **/node_modules**: Dependencias de Node.js instaladas automáticamente.
-- **/public**: Archivos estáticos y públicos como el HTML base (`index.html`).
-- **/src**: Código fuente de la aplicación React.
-  - `App.js`: Componente principal que conecta la lógica y la interfaz.
-  - `index.js`: Punto de entrada para iniciar la aplicación.
-  - `App.css`: Estilos para los componentes.
-  - `index.css`: Estilos globales.
-- **package.json**: Define las dependencias, scripts y configuración del proyecto.
+#Intalación de paquetes
+npm install -D tailwindcss@3.4.1 postcss autoprefixer
+npx tailwindcss init -p
+
+#Agregar en el tailwind.config.js
+  /** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+#editar app.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#agregar en el index.js
+import './index.css';
+
+
+
+
+
+
 
 ## Instalación
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/Andres12345-debug/Estructura-de-datos.git
 
-2. Estructura del proyecto Frontend
+2. Arquitectura del proyecto Frontend, arquitectura basada en componentes
     /frontend
 ├── /node_modules        (dependencias instaladas con npm)
 ├── /public              (archivos públicos como index.html)
@@ -40,6 +59,8 @@ Este proyecto utiliza **React** para construir una interfaz interactiva basada e
 │   ├── /utils           (funciones auxiliares o utilidades)
 │   │   ├── api.js
 │   │   └── helpers.js
+│   ├── /routes           (funciones auxiliares o utilidades)
+│   │   ├── ruteoPrincipal.js
 │   ├── App.js           (componente principal)
 │   ├── index.js         (punto de entrada)
 │   ├── reportWebVitals.js
@@ -47,3 +68,7 @@ Este proyecto utiliza **React** para construir una interfaz interactiva basada e
 ├── .gitignore           (archivos a ignorar por Git)
 ├── package.json         (configuración de dependencias y scripts)
 └── README.md            (documentación del proyecto)
+
+
+Iniciar Proyecto
+  npm start
