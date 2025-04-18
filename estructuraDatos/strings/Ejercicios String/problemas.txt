@@ -1,0 +1,48 @@
+indexOf
+    Problema 1: Verificar si una palabra está en una frase
+    Dada una frase y una palabra, determina si la palabra existe en la frase.
+    const frase = "El gato está en el tejado";
+    const palabra = "gato";
+    // ¿La palabra "gato" está en la frase?
+    Problema 2: Encontrar la posición de una letra
+    Dado un string, encuentra la posición de la primera aparición de la letra "e".
+slice
+    Problema 1: Obtener los primeros 5 caracteres
+    Dado un string, devuelve los primeros 5 caracteres usando slice.
+    Problema 2: Obtener el dominio de un correo
+    Dado un correo electrónico, usa slice para obtener solo el dominio (ej: "gmail.com" de "usuario@gmail.com").
+replace
+    Problema 1: Reemplazar palabras malas   
+    Dada una frase, reemplaza la palabra "tonto" por "inteligente".
+    Problema 2: Corregir errores de escritura
+    Corrige la palabra mal escrita "Javascript" (debería ser "JavaScript").
+toUpperCase    
+     Problema 1: Convertir un mensaje a mayúsculas
+    Dado un mensaje de usuario, conviértelo completamente a mayúsculas.
+    Problema 2: Crear un grito
+    Dado un texto, conviértelo a mayúsculas y agrega "!!!" al final para simular un grito.
+toLowerCase
+    Problema 1: Comparar correos sin importar mayúsculas
+    Compara dos correos electrónicos para verificar si son iguales sin importar mayúsculas.
+    Problema 2: Normalizar texto para búsqueda
+    Dado un texto y una búsqueda del usuario, convierte ambos a minúsculas antes de usar indexOf.
+concat
+    Problema 1: Crear nombre completo
+    Dadas dos variables nombre = "Julian" y apellido = "Montañez", únelas con un espacio en medio.
+    Problema 2: Armar un mensaje personalizado
+    Concatena varias partes como:
+    js
+    Copiar código
+    const saludo = "Hola, ";
+    const nombre = "Luis";
+    const mensaje = " bienvenido a nuestra plataforma.";
+trim
+    Problema 1: Limpiar entrada de usuario
+    Dado un string con espacios al inicio y al final, elimínalos.
+    Problema 2: Validar campo de texto
+    Verifica si un input que parece vacío en realidad tiene solo espacios. Usa trim() para validar si está vacío.
+split
+    Problema 1: Separar palabras
+    Dado un string: "Hola cómo estás", conviértelo en un array de palabras.
+    Problema 2: Obtener día, mes y año
+    Dada una fecha como "2025-04-17", usa split para obtener los valores por separado.    

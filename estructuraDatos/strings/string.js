@@ -20,6 +20,7 @@ console.log('oscar' == 'oscar')
 console.log(typeof'0', typeof 0)
 
 
+
 //indeof
 mensaje = "curso de javascript para principiantes"
 console.log(mensaje[mensaje.indexOf('javascript')])
@@ -42,7 +43,7 @@ console.log(res, mensaje)
 //toUpperCase para las mayusculas
 res = mensaje.toUpperCase();
 console.log(res);
-//toUpperCase Minusculas
+//LowerCase Minusculas
 res = mensaje.toLocaleLowerCase();
 console.log(res);
 
