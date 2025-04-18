@@ -22,5 +22,41 @@ console.log(typeof'0', typeof 0)
 
 //indeof
 mensaje = "curso de javascript para principiantes"
-console.log(mensaje.indexOf())
+console.log(mensaje[mensaje.indexOf('javascript')])
 
+//LastIndexOf ayudan a obtener indices con base a un texto
+console.log(mensaje.indexOf('a'))
+
+//Slice indicie inicial y finalal
+let res = mensaje.slice(3, 10);
+console.log(res)
+
+//Sustr indice y el numero de caracteres
+res = mensaje.substring(3,10)
+console.log(res)
+
+//Replace permite reemplazar texto
+res = mensaje.replace('javascript', 'Php')
+console.log(res, mensaje)
+
+//toUpperCase para las mayusculas
+res = mensaje.toUpperCase();
+console.log(res);
+//toUpperCase Minusculas
+res = mensaje.toLocaleLowerCase();
+console.log(res);
+
+//Concat para concatenar
+let primerNombre = 'Juan '
+let segundoNombre = 'David '
+let apellido = 'Montañez '
+res = primerNombre.concat(segundoNombre , apellido , ' Abogado');
+console.log(res)
+
+//Trim borrar espacios vacios de mas antes de inciar y despues de terminar
+let mensajeHTTP = '    Transaccion exitosa '
+console.log(mensajeHTTP.trim())
+
+//Split covertir cadena de texto en arreglo
+const mensajeError = 'Busqueda no devolvio resultados'
+console.log(mensajeError.split(' '));
