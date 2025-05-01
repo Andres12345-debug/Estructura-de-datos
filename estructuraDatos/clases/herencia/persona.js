@@ -20,4 +20,7 @@ export class Persona{
     nombreCompleto(){
         return this._nombre + " " + this._apellido;
     }
+    toString(){
+        return this.nombreCompleto();
+    }
 }
