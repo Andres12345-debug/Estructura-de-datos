@@ -18,10 +18,32 @@ let miPromesa = new Promise((resolver, rechazar) => {
 //     )
 
 let promesa = new Promise((resolver) =>{
-    console.log("Inicio de la promesa");
+   // console.log("Inicio de la promesa");
     setTimeout(() => resolver("Promesa cumplida"), 3000);
-    console.log("Fin de la promesa");
+    //console.log("Fin de la promesa");
 });
-promesa.then(valor => console.log(valor))
+//promesa.then(valor => console.log(valor))
 
-//asyn
+//async function
+async function miFuncionConPromesa(){
+    return 'Saludos con promesa y async'
+}
+//miFuncionConPromesa().then(valor=> console.log(valor))
+
+//await
+async function funcionConPromesaYAwait(){
+ let miPromesa = new Promise((resolver) => {
+    resolver("Promesa cumplida con await")
+ })
+ console.log(await miPromesa)
+}
+//funcionConPromesaYAwait();
+
+//Async, Await y setTimeout
+async function funcionConPromesaYAwaitTimeout(){
+    let miPromesa = new Promise((resolver => {
+        setTimeout(() => resolver("Promesa cumplida con await y timeout"), 3000)
+    }))
+    console.log(await miPromesa)
+}
+funcionConPromesaYAwaitTimeout();
